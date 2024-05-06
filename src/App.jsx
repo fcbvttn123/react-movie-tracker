@@ -4,7 +4,6 @@ import { Home } from "./pages/home/Home"
 import { AuthCheck } from "./components/AuthCheck"
 
 function App() {
-  localStorage.setItem("auth", true)
   return (
     <Router>
       <Routes>
