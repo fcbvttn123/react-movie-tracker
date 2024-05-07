@@ -9,7 +9,7 @@
 
 	UI: Home-Shows-Movies-List Navigation, Search Button, Sign Out Button 
 
-	READ all movies and shows in categories 
+	READ all movies and shows in categories: My List, Top Rated Movies, Popular Movies
 
 	CREATE movie (to MyList DB) 
 
@@ -20,7 +20,7 @@
 
 	UI: Filter Dropbox  
 
-	READ all shows in categories
+	READ all shows in categories: TV Comedies
 
 	CREATE movie (to MyList DB) 
 
@@ -31,7 +31,7 @@
 
 	UI: Filter Dropbox 
 
-	READ all movies in categories
+	READ all movies in categories: Action Movies
 
 	CREATE movie (to MyList DB) 
 
