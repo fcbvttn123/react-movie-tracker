@@ -5,6 +5,7 @@ import {TVShows} from "./pages/home/TVShows"
 import {Movies} from "./pages/home/Movies"
 import {MyList} from "./pages/home/MyList"
 import { AuthCheck } from "./components/AuthCheck"
+import { Layout } from "./pages/home/Layout"
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route element={<AuthCheck />}>
-          <Route path="/" element={<Home />}> 
+          <Route path="/" element={<Layout />}> 
+            <Route index element={<Home />} />
             <Route path="tvshows" element={<TVShows />} />
             <Route path="movies" element={<Movies />} />
             <Route path="mylist" element={<MyList />} />
