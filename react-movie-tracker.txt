@@ -1,0 +1,61 @@
+/login 
+
+	UI: Google Login Button  
+
+
+
+
+/ 
+
+	UI: Home-Shows-Movies-List Navigation, Search Button, Sign Out Button 
+
+	READ all movies and shows in categories 
+
+	CREATE movie (to MyList DB) 
+
+
+
+
+/tvshows 
+
+	UI: Filter Dropbox  
+
+	READ all shows in categories
+
+	CREATE movie (to MyList DB) 
+
+
+
+
+/movies
+
+	UI: Filter Dropbox 
+
+	READ all movies in categories
+
+	CREATE movie (to MyList DB) 
+
+
+
+
+/mylist 
+
+	READ, DELETE 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
