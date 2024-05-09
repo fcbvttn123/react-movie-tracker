@@ -7,12 +7,17 @@ export const key = {
 };
 
 export const URLs = {
-    topRatedMovies: "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1", 
-    popularMovies: "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1", 
-    movieGenres: "https://api.themoviedb.org/3/genre/movie/list?language=en", 
+    // Home Page
     allTrending: "https://api.themoviedb.org/3/trending/all/week?language=en-US", 
+    // TV Shows
     showGenres: "https://api.themoviedb.org/3/genre/tv/list", 
     trendingShows: "https://api.themoviedb.org/3/trending/tv/week?language=en-US", 
     airingShowsToday: "https://api.themoviedb.org/3/tv/airing_today?language=en-US&page=1", 
-    popularShows: "https://api.themoviedb.org/3/tv/popular"
+    popularShows: "https://api.themoviedb.org/3/tv/popular", 
+    // Movies
+    movieGenres: "https://api.themoviedb.org/3/genre/movie/list?language=en", 
+    topRatedMovies: "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1", 
+    popularMovies: "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1", 
+    nowPlayingMovies: "https://api.themoviedb.org/3/movie/now_playing",
+    upComingMovies: "https://api.themoviedb.org/3/movie/upcoming"
 }

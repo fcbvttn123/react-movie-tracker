@@ -5,9 +5,9 @@ import { MovieCards } from "../../components/MovieCards";
 
 export function Home() {
 
-    let [allTrending, setAllTrending] = useState([])
-    let [topRatedMovies, setTopRatedMovies] = useState([])
-    let [popularMovies, setPopularMovies] = useState([])
+    let [allTrending, setAllTrending] = useState(null)
+    let [topRatedMovies, setTopRatedMovies] = useState(null)
+    let [popularMovies, setPopularMovies] = useState(null)
     
     useEffect(() => {
         useFetchTMDB_API(URLs.allTrending)
