@@ -48,21 +48,21 @@ export function TVShows() {
                 trending && 
                 <div className="mt-3">
                     <h1 className="text-xl font-semibold">Trending</h1>
-                    <div className="flex items-center overflow-auto">{trending.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
+                    <div className="flex gap-x-4 overflow-auto">{trending.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
                 </div>
             }
             {
                 airingToday && 
                 <div className="mt-3">
                     <h1 className="text-xl font-semibold">TV shows airing today</h1>
-                    <div className="flex items-center overflow-auto">{airingToday.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
+                    <div className="flex gap-x-4 overflow-auto">{airingToday.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
                 </div>
             }
             {
                 popular && 
                 <div className="mt-3">
                     <h1 className="text-xl font-semibold">Popular</h1>
-                    <div className="flex items-center overflow-auto">{popular.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
+                    <div className="flex gap-x-4 overflow-auto">{popular.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
                 </div>
             }
         </div>
