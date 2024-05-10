@@ -33,21 +33,21 @@ export function Home() {
                 allTrending && 
                 <div className="mt-3">
                     <h1 className="text-xl font-semibold">All Trending</h1>
-                    <div className="flex gap-x-4 overflow-auto">{allTrending.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
+                    <div className="flex gap-x-4 overflow-auto">{allTrending.map(e => <MovieCards key={e.id} id={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
                 </div>
             }
             {
                 topRatedMovies && 
                 <div className="mt-3">
                     <h1 className="text-xl font-semibold">Top Rated</h1>
-                    <div className="flex gap-x-4 overflow-auto">{topRatedMovies.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
+                    <div className="flex gap-x-4 overflow-auto">{topRatedMovies.map(e => <MovieCards key={e.id} id={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
                 </div>
             }
             {
                 popularMovies && 
                 <div className="mt-3">
                     <h1 className="text-xl font-semibold">Popular</h1>
-                    <div className="flex gap-x-4 overflow-auto">{popularMovies.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
+                    <div className="flex gap-x-4 overflow-auto">{popularMovies.map(e => <MovieCards key={e.id} id={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
                 </div>
             }
         </div>

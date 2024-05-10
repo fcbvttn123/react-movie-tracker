@@ -36,21 +36,21 @@ export function Movies() {
                 topRated && 
                 <div className="mt-3">
                     <h1 className="text-xl font-semibold">Top Rated</h1>
-                    <div className="flex gap-x-4 overflow-auto">{topRated.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
+                    <div className="flex gap-x-4 overflow-auto">{topRated.map(e => <MovieCards key={e.id} id={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
                 </div>
             }
             {
                 nowPlaying && 
                 <div className="mt-3">
                     <h1 className="text-xl font-semibold">Now Playing</h1>
-                    <div className="flex gap-x-4 overflow-auto">{nowPlaying.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
+                    <div className="flex gap-x-4 overflow-auto">{nowPlaying.map(e => <MovieCards key={e.id} id={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
                 </div>
             }
             {
                 upcoming && 
                 <div className="mt-3">
                     <h1 className="text-xl font-semibold">Upcoming</h1>
-                    <div className="flex gap-x-4 overflow-auto">{upcoming.map(e => <MovieCards key={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
+                    <div className="flex gap-x-4 overflow-auto">{upcoming.map(e => <MovieCards key={e.id} id={e.id} imgName={e.backdrop_path} title={e.title}/>)}</div>
                 </div>
             }
         </div>
