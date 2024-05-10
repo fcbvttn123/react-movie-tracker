@@ -16,4 +16,4 @@ export const app = initializeApp(firebaseConfig);
 
 const firestoreDb = getFirestore()
 
-export const favoriteMovies = collection(db, "favoriteMovies")
+export const favoriteMovies = collection(firestoreDb, "myList")

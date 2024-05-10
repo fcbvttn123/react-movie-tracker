@@ -1,4 +1,5 @@
 import {useTmdbImageUrl} from "../hooks/useTmdbImageUrl"
+import { PlusIcon } from "@heroicons/react/16/solid"
 
 export function MovieCards({imgName, title}) {
     return (
@@ -7,6 +8,10 @@ export function MovieCards({imgName, title}) {
                 <img className="w-full h-full object-cover" src={useTmdbImageUrl(imgName)} />
             </div>
             <h1>{title ? title : "No Title"}</h1>
+            <button className="flex items-center gap-x-2 bg-slate-200 p-4 rounded-l hover:bg-slate-400">
+                <PlusIcon className="w-4 h-4" />
+                <span>Add to My List</span>
+            </button>
         </div>
     )
 }
