@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { collection, getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA3u1UIt4vX-0d4XE8S1SkW_dFUEE4x3Cg",
@@ -10,3 +11,9 @@ const firebaseConfig = {
 };
 
 export const app = initializeApp(firebaseConfig);
+
+// Firestore Setup 
+
+const firestoreDb = getFirestore()
+
+export const favoriteMovies = collection(db, "favoriteMovies")
