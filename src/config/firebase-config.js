@@ -14,6 +14,6 @@ export const app = initializeApp(firebaseConfig);
 
 // Firestore Setup 
 
-const firestoreDb = getFirestore()
+export const firestoreDb = getFirestore()
 
 export const myListCollection = collection(firestoreDb, "myList")
