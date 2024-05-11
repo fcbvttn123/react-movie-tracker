@@ -7,7 +7,7 @@ export async function useGetMyList(email) {
     const querySnapShot = await getDocs(q)
     querySnapShot.forEach(doc => {
         myList.push({
-            rowId: doc.id, 
+            id: doc.id, 
             ...doc.data()
         })
     })

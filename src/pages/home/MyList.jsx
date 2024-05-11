@@ -7,17 +7,18 @@ export function MyList() {
 
     let [list, setList] = useState(null)
 
+    async function getMyList() {
+        let res = await useGetMyList(useGetAccountInfo().email)
+        setList(res)
+    }
+    
     useEffect(() => {
-        async function getMyList() {
-            let res = await useGetMyList(useGetAccountInfo().email)
-            setList(res)
-        }
         getMyList()
     }, [])
 
     return (
         <div>
-            {list && list.map(e => <MovieCards key={e.rowId} id={e.id} imgName={e.imgName} title={e.title} renderedInMyList={true} />)}
+            {list && list.map(e => <MovieCards key={e.movieId} id={e.movieId} imgName={e.imgName} title={e.title} renderedInMyList={true} rowId={e.id} />)}
         </div>
     )
 
