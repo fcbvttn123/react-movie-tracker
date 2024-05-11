@@ -30,4 +30,14 @@ export default App
 
 
 
-// No Title
+
+/**
+ * @todo 
+ * + Folder Structure 
+ * + Show account information 
+ * + Clean Code 
+ * + Style 
+ * @bugs
+ * + No Title 
+ * + Cannot add TV Shows to My List 
+ */
